@@ -1,0 +1,272 @@
+body {
+font-family: helvetica;
+padding: 0;
+margin: 0;
+}
+
+#alku {
+	float: center;
+	height: 600px;
+	background-color: silver;
+}
+
+
+.btn1{
+	position: fixed;
+    transition: .5s ease;
+    top:300px;
+	
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+	position: relative;
+	margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 30px;
+  color: green;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.4s ease;
+  border-radius: 2px 3px 3px 2px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+  text-shadow: 4px 4px 6px #000000;
+}
+
+/* ----------------------samppa linna shake!!!!----------------------------*/
+#varaanappi {
+	position: relative;
+	top: 100px;
+	margin: 0 auto;
+	background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* ----------------------end of samppa linna shake!!!!--------------------*/
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #717171;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: green;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+<!-- NAVBAR -->
+#navbar {
+	width: 100%;
+	height: 100px;
+	background: #bda27e;
+	
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+#hakubar {
+	width: 350px;
+	height: 30px;
+	position: relative;
+	right: 100%;
+	margin-top: 10px;
+	border: 3px solid green;
+}
+
+footer {
+	background-color: #darkgrey;
+	padding: 20px;
+	text-align: center;
+	height: auto;
+	width: 100%;
+}
+#container {
+	background-color: #9D9292;
+	height: 100%;
+	width: auto;
+}
+/* ----------------------samppa linna shake!!!!----------------------------*/
+#etusivu {
+	display: block;
+	width: 100%;
+	height: auto;
+	background-color: white;
+	text-align: center;
+	margin: 0 auto;
+}
+/* ----------------------end of samppa linna shake!!!!--------------------*/
+
+/* ----------------------samppa linna shake!!!!----------------------------*/
+.laatikot {
+	position: relative;
+	display: inline-block;
+	width: 450px;
+	height: 450px;
+	background-color: white;
+	margin: 0 auto;
+	margin: 2em 1em 2em 0;
+	background-size: cover;
+}
+#sviitti {
+	background-image: url("sviitti.jpg");
+
+}
+#yksisarvinen {
+	background-image: url("hepo.jpg");
+
+}
+#historia {
+	background-image: url("perustaja.jpg");
+
+}
+#dots {
+	margin-bottom: 1em;
+}
+
+#varaanappi:hover {
+	background-color: white;
+	color: #4CAF50;
+}
+.infonappi {
+	display: block;
+	position: relative;
+	top: 70%;
+	margin: 0 auto;
+	background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.infonappi:hover {
+	background-color: white;
+	color: #4CAF50;
+}
+.laatikot > p {
+	position: relative;
+	font-size: 22pt;
+	color: white;
+	top: 40%;
+	margin: 0;
+	font-weight: bold;
+	text-shadow: 4px 4px 6px #000000;
+	
+}
+
+.tekstilaatikko {
+	position: relative;
+	display: inline-block;
+	max-width: 1200px;
+	height: 600px;
+	background-color: #9D9292;
+	margin: 0 auto;
+	margin: 2em 1em 2em 0;
+	float: right;
+	padding: 1em;
+}
+
+.tekstilaatikko > p {
+	margin: 0;
+	text-align: left;
+}

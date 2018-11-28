@@ -1,0 +1,406 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title></title>
+<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+font-family: helvetica;
+padding: 0;
+margin: 0;
+}
+
+#alku {
+	float: center;
+	height: 600px;
+	background-color: silver;
+	
+}
+
+.btn1{
+	position: fixed;
+    transition: .5s ease;
+    top:300px;
+	
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 30px;
+  color: green;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.4s ease;
+  border-radius: 2px 3px 3px 2px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+  text-shadow: 4px 4px 6px #000000;
+}
+
+.varaanappi {
+	position: relative;
+	top: 100px;
+	margin: 0 auto;
+	background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #717171;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: green;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#navbar {
+	width: 100%;
+	background: #bda27e;
+	
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+footer {
+	background-color: dark gray;
+	padding: 20px;
+	display: block;
+	text-align: center;
+	
+}
+#container {
+	background-color: #9D9292;
+	height: 100%;
+	width: auto;
+}
+
+#etusivu {
+	display: block;
+	width: 100%;
+	height: auto;
+	background-color: silver;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.laatikot {
+	position: relative;
+	display: inline-block;
+	width: 450px;
+	height: 450px;
+	background-color: white;
+	margin: 0 auto;
+	margin: 2em 1em 2em 0;
+	background-size: cover;
+}
+#sviitti {
+	background-image: url("sviitti.jpg");
+
+}
+#yksisarvinen {
+	background-image: url("hepo.jpg");
+
+}
+#historia {
+	background-image: url("perustaja.jpg");
+
+}
+#dots {
+	margin-bottom: 1em;
+}
+
+#varaanappi:hover {
+	background-color: white;
+	color: #4CAF50;
+}
+.infonappi {
+	display: block;
+	position: relative;
+	top: 70%;
+	margin: 0 auto;
+	background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.infonappi:hover {
+	background-color: white;
+	color: #4CAF50;
+}
+.laatikot > p {
+	position: relative;
+	font-size: 22pt;
+	color: white;
+	top: 40%;
+	margin: 0;
+	font-weight: bold;
+	text-shadow: 4px 4px 6px #000000;
+	
+}
+
+#hakubar {
+	width: 350px;
+	height: 30px;
+	position: relative;
+	right: 150%;
+	margin-top: 10px;
+	border: 3px solid green;
+}
+
+</style>
+<body>
+
+<div id="container">	 
+<div id="navbar">
+<ul>
+  <li><a href="delete_update.html">Omat sivut</a></li>
+  <li><a href="historia.html">Historia</a></li>
+  <li><a href="extra2.html">Extrat</a></li>
+  <li><a href="huoneet.html">Huoneet</a></li>
+  <li><a class="active" href="#etusivu">Etusivu</a></li>
+  
+  <li><input type="text" id="ehdotus"></li>
+    <span id="tulos">
+  </span>
+</ul>
+</div>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img1.jpg" height="700px" width="100%">
+    <div class="text">Höyhenen pehmeät lakanat</div>
+	<div class="text"><button class="varaanappi" onclick="window.location.href='varaussivu.php'">Varaa tästä!</button></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img2.jpg" height="700px" width="100%">
+    <div class="text">Täydelliset aamupalat sängyssä</div>
+    <div class="text"><button class="varaanappi">Varaa tästä!</button></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img3.jpg" height="700px" width="100%">
+    <div class="text">Rento ilmapiiri</div>
+    <div class="text"><button class="infonappi" onclick="window.location.href='extra2.html'">Varaa tästä!</button></div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center" id="dots">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<div id="etusivu">
+	<div class="laatikot" id="sviitti">
+	<p>Tsekkaa upeat huoneemme!</p>
+	<button class="infonappi" onclick="window.location.href='huoneet.html'">VARAA</button>
+	</div>
+	<div class="laatikot" id="yksisarvinen">
+	<p>Silitä yksisarvista!</p>
+	<button class="infonappi" onclick="window.location.href='extra2.html'">LISÄTIETOJA</button>
+	</div>
+	<div class="laatikot" id="historia">
+	<p>Tutustu Hörhön historiaan.</p>
+	<button class="infonappi" onclick="window.location.href='historia.html'">TUTUSTU</button>
+	</div>
+<!-- <div style="clear: both;"></div> tää on sellane jekku joka korjaa ton etusivu divin -->
+
+</div>
+<footer>
+  <p>HOTELLI HÖRHÖ</p>
+  <p>Perhoskatu 17</p>
+  <p>81820 Lieksa</p>
+  <p>0100 2345 9876</p>
+  <p>hörhö@info.fi</p>
+
+</footer>
+	
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
+
+
+
+// HAKUPALKKI //
+
+$(document).ready(function(){
+    $("#ehdotus").keyup(function(){
+	
+        var ehdotus = $("#ehdotus").val();
+		//alert (ehdotus);
+        $.ajax({
+          url: 'hakutulos.php', 
+          data: {hakutulos: ehdotus},
+		  type: "POST",
+		  
+		  dataType: 'html', 
+ 	      
+          success: function(vastaus) 
+		  { //alert ("paluu");
+			 // siirretään html-muotoinen vastaus tagiin, jonka id on tulos
+             $('#tulos').html(vastaus); 
+	      } 
+   });
+  });
+});
+
+</script>
+</body>
+</head>
+</html>

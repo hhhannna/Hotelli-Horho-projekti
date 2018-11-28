@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title></title>
+<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+font-family: helvetica;
+padding: 0;
+margin: 0;
+}
+
+footer {
+	background-color: dark gray;
+	padding: 20px;
+	display: block;
+	text-align: center;
+	
+}
+#container {
+	background-color: #9D9292;
+	height: 100%;
+	width: auto;
+}
+</style>
+<body>
+
+<div id="container">
+<h1>Varaa tai muuta tietoja</h1>
+<br>
+<form action="poista.php" method="post">
+Kirjoita asiakasID poistaaksesi asiakkaan tiedot: 
+<br>
+<br>
+<input type="text" name="AsiakasID" id="AsiakasID">
+<input type="submit" value="POISTA">
+<br>
+</form>
+<br>
+<hr>
+<form action="paivitys.php" method="post">
+Kirjoita asiakasID päivittääksesi asiakkaan tietoja: 
+<br>
+<br>
+<input type="text" name="AsiakasID" id="AsiakasID">
+<br>
+<br>
+Valitse muutettava tieto:
+<br>
+<br>
+  <input type="radio" name="radio" value="Etunimi"> Etunimi
+  <input type="radio" name="radio" value="Sukunimi"> Sukunimi
+  <input type="radio" name="radio" value="Puhelinnumero"> Puhelinnumero
+  <input type="radio" name="radio" value="Sahkoposti"> Sähköposti<br>
+<input type="text" name="tieto" id="tieto">
+<input type="submit" value="PÄIVITÄ">
+<br>
+<br>
+<hr>
+<a href="horho.html">TAKAISIN ETUSIVULLE</a>
+</form>
+</div>	
+</body>
+</head>
+</html>

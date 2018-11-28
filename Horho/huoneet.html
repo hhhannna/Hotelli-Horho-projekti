@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Huoneet</title>
+<style>
+
+body {
+	font-family: helvetica;
+	background-image: url("perhe.jpg");
+	background-size: cover;
+}
+
+h1 {
+	text-align: center;
+	color:black;
+}
+
+.teksti {
+	margin: auto;
+	position: relative;
+	width: 400px;
+	height: 400px;
+	float: right;
+
+}
+.container {
+
+	display: block;
+	width: 80%;
+	height: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: white;
+
+
+}
+#Alkucontainer {
+
+	height: 100%;
+	width: auto;
+}
+.button {
+	position: relative;
+	top: 100px;
+	margin: 0 auto;
+	background-color: #4CAF50;
+   	border: none;
+	color: white;
+	padding: 15px 25px;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+}
+#navbar {
+	width: 100%;
+	background: #bda27e;
+	
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+	
+</style>
+</head>
+<body>
+<div id="Alkucontainer">
+<div class="container">
+<div id="navbar">
+<ul>
+  <li><a href="delete_update.html">Omat sivut</a></li>
+  <li><a href="historia.html">Historia</a></li>
+  <li><a href="extra2.html">Extrat</a></li>
+  <li><a class="active" href="#huoneet">Huoneet</a></li>
+  <li><a href="horho.html">Etusivu</a></li>
+</ul>
+</div>
+<h1>Sviitit</h1>
+
+<img src="sviitti1.jpg" alt="Sviitti" height="400" width="600" >
+<div class="teksti">
+<p><br>Kaipaatko hemmottelua tai onko häät tiedossa? Varaa meiltä ylellinen ja tilava sviitti. Sviitistä löytyy myös Hörhömäisen upeat oleskelutilat!  </p>
+<button class="button" onclick="window.location.href='varaussivu.php'">VARAA SVIITTI</button></a>
+</div>
+</div>
+<div class="container">
+<h1>1-4 hengen huoneet</h1>
+<img src="1-4henkea.jpg" alt="Normaali huone" height="400" width="600" >
+<div class="teksti">
+<p><br>Meiltä löytyy laaja valikoima eri kokoisia 1-4 hengen huoneita. Varaa heti haluamasi päivä!</p>
+<button class="button">VARAA HUONE</button>
+</div>
+</div>
+<div class="container">
+<h1>Perhehuoneet</h1>
+<img src="perhe.jpg" alt="Perhehuone" height="400" width="600" >
+<div class="teksti">
+<p><br>Haluatko laatuaikaa perheen kesken? Varaa meiltä kodikas perhehuone, johon mahtuu isompikin seurue</p>
+<button class="button">VARAA PERHEHUONE</button>
+</div>
+</div>
+<div class="container">
+<h1>Lemmikkihuoneet</h1>
+<img src="koirat.jpg" alt="Lemmikkihuoneet" height="400" width="600" >
+<div class="teksti">
+<p><br>Haluatko saada lemmikkisi mukaan? Meille pääsevät kaikenkarvaiset lemmikit mukaan viihtyisiin lemmikkihuoneisiimme.</p>
+<button class="button">VARAA LEMMIKKIHUONE</button>
+</div>
+</div>
+</div>
+
+</html>
